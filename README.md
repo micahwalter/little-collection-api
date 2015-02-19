@@ -1,11 +1,11 @@
 # little-collection-api
-a python flask based api using rawgit and github as a data source
+a python flask based api using RawGit and GitHub as a data source
 
 ### wha?
 
 This is a little experiment. There is nearly no code in this thing yet. 
 
-This just uses [RawGit](https://rawgit.com/) to turn the collection data [Cooper Hewitt has published](https://github.com/cooperhewitt/collection) as json files in a little mini-api.
+This just uses [RawGit](https://rawgit.com/) to turn the collection data [Cooper Hewitt has published](https://github.com/cooperhewitt/collection) as json files into a little mini-api.
 
 Right now, it just has two endpoints
 * /objects/object_id
