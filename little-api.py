@@ -5,6 +5,10 @@ from flask import request
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "hello collection"
+
 @app.route('/objects/<object_id>')
 def show_object(object_id):
 
@@ -16,6 +20,19 @@ def show_object(object_id):
     data = response.read()
 
     return data    
+
+@app.route('/people/<people_id>')
+def show_people(people_id):
+
+    path = id2path(people_id)
+
+    url = 'https://rawgit.com/cooperhewitt/collection/master/people/' + path + '/' + people_id + '.json'
+    response = urllib.urlopen(url)
+
+    data = response.read()
+
+    return data    
+
 
 def id2path(id):
 
