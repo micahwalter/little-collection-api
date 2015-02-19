@@ -5,7 +5,7 @@ a python flask based api using rawgit and github as a data source
 
 This is a little experiment. There is nearly no code in this thing yet. 
 
-This just uses (https://rawgit.com/)[RawGit] to turn the collection data (https://github.com/cooperhewitt/collection)[Cooper Hewitt has published] as json files in a little mini-api.
+This just uses [RawGit](https://rawgit.com/) to turn the collection data [Cooper Hewitt has published](https://github.com/cooperhewitt/collection) as json files in a little mini-api.
 
 Right now, it just has two endpoints
 * /objects/object_id
@@ -23,8 +23,12 @@ or like this for a person
 
 ### why?
 
-In a nutshell, I'm thinking about alternative ways for institutions like Cooper Hewitt to publish collections meta-data. We already have a website, we have a public API, we have csv files and a data dump available on GitHub, and now this. Is it useful? I really can't say, but it jumps over the barrier of having to learn how to use our API and oAuth and whatever.
+In a nutshell, I'm thinking about alternative ways for institutions like [Cooper Hewitt](http://www.cooperhewitt.org) to publish collections meta-data. We already have a [collections website](http://collection.cooperhewitt.org), we have a [public API](http://collection.cooperhewitt.org/api), we have [csv files and a data dump available on GitHub](https://github.com/cooperhewitt/collection), and now this. 
+
+Is it useful? I really can't say, but it jumps over the barrier of having to learn how to use our API and oAuth2 and whatever.
 
 ### what it's not?
+
+It's not the API. Currently, there are only two endpoints. I may add more soon, but really, if you want the full featureset of the API, go use it for real. 
 
 This is just an experiment. The URLs above on Heroku are just there to test it out. In other-words, don;t go and use this in a production app. Also, you should read all of RawGit's Terms of Use before going too far with this. It's currently using the "dev/testing" endpoint, so keep that in mind and be nice. 
