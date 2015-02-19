@@ -31,4 +31,4 @@ Is it useful? I really can't say, but it jumps over the barrier of having to lea
 
 It's not the API. Currently, there are only two endpoints. I may add more soon, but really, if you want the full featureset of the API, go use it for real. 
 
-This is just an experiment. The URLs above on Heroku are just there to test it out. In other-words, don;t go and use this in a production app. Also, you should read all of RawGit's Terms of Use before going too far with this. It's currently using the "dev/testing" endpoint, so keep that in mind and be nice. 
+This is just an experiment. The URLs above on Heroku are just there to test it out. In other-words, don't go and use this in a production app. Also, you should read all of [RawGit's FAQs](https://rawgit.com/faq) before going too far with this. It's currently using the "dev/testing" endpoint, so keep that in mind and be nice. 
