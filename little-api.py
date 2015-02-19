@@ -3,6 +3,8 @@ import urllib, json
 from flask import Flask
 from flask import request
 
+rawgit = 'https://rawgit.com/cooperhewitt/collection/master/'
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -14,7 +16,7 @@ def show_object(object_id):
 
     path = id2path(object_id)
 
-    url = 'https://rawgit.com/cooperhewitt/collection/master/objects/' + path + '/' + object_id + '.json'
+    url = rawgit + 'objects/' + path + '/' + object_id + '.json'
     response = urllib.urlopen(url)
 
     data = response.read()
@@ -26,7 +28,7 @@ def show_people(people_id):
 
     path = id2path(people_id)
 
-    url = 'https://rawgit.com/cooperhewitt/collection/master/people/' + path + '/' + people_id + '.json'
+    url = rawgit + 'people/' + path + '/' + people_id + '.json'
     response = urllib.urlopen(url)
 
     data = response.read()
